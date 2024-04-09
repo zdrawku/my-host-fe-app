@@ -24,13 +24,37 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules"]
+            },
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/favicon_dev.ico",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@infragistics/appbuilder-sdk/src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/monaco-editor/min/",
+                "output": "/assets/monaco/"
+              },
+              {
+                "glob": "ua-parser.min.js",
+                "input": "node_modules/ua-parser-js/dist/",
+                "output": "/assets/js/"
+              },
+              {
+                "glob": "**/*.css",
+                "input": "node_modules/igniteui-webcomponents/themes/",
+                "output": "/assets/igniteui-webcomponents/themes/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@infragistics/appbuilder-sdk/src/assets/css/index.css"
             ],
             "scripts": []
           },

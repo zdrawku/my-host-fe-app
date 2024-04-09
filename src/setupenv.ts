@@ -3,6 +3,7 @@ import { setAppBuilderConfig } from '@infragistics/appbuilder-sdk';
 setAppBuilderConfig({
     hideSharingOptions: true,
     personalWorkspaceLabel: 'myExperiences',
+    baseUrl: "https://localhost:44381/"
     // shellTheme: {
     //     typeface: 'Public Sans',
     //     colors: {
