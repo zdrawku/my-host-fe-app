@@ -21,7 +21,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@infragistics/appbuilder-sdk/lib/utils/cookie-store"
             ],
             "tsConfig": "tsconfig.app.json",
             "stylePreprocessorOptions": {
@@ -53,8 +54,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/@infragistics/appbuilder-sdk/src/assets/css/index.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
