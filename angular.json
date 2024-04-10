@@ -34,7 +34,7 @@
               "src/favicon_dev.ico",
               {
                 "glob": "**/*",
-                "input": "node_modules/@infragistics/appbuilder-sdk/src/assets/",
+                "input": "node_modules/@infragistics/appbuilder-sdk/src/assets",
                 "output": "/assets/"
               },
               {
@@ -56,7 +56,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/hammerjs/hammer.min.js",
+              "./node_modules/monaco-editor/min/vs/loader.js"
+            ]
           },
           "configurations": {
             "production": {

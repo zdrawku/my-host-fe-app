@@ -1,13 +1,28 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>MyFirstHostSdkApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- The attribute crossorigin="anonymous" prevents a "Cannot access rules" error in html-to-image package -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet preload prefetch" as="style"
+    crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet preload prefetch" as="style" crossorigin="anonymous">
+
+  <!-- dayjs is required by Reveal but lazy-loading it is incompatible with monaco loader being present
+          https://github.com/microsoft/monaco-editor/issues/1249 -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script>window.configOverrides = {};</script>
 </head>
-<body>
+
+<body class="ig-typography">
   <app-root></app-root>
 </body>
+
 </html>

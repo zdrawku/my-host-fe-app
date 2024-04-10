@@ -8,7 +8,7 @@ import { appConfig as config } from '@infragistics/appbuilder-sdk';
  */
 class WebpackTranslateLoader implements TranslateLoader {
   getTranslation(lang: string) {
-      return from(import(`../../node_modules/@infragistics/appbuilder-sdk/src/assets/i18n/${lang}.json`));
+      return from(import(`../node_modules/@infragistics/appbuilder-sdk/src/assets/i18n/${lang}.json`));
   }
 }
 
